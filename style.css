@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Neutraface2-bold";
+    src: url("./Neutraface2Text-Light.otf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 90px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-family: "Neutraface2-bold", sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+}
+
+header nav img {
+    height: 47px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+header nav ul a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header nav ul a.boka-btn {
+    padding: .7rem 1rem;
+    background-color: #d86b33;
+    border: 1px solid #d86b33;
+    transition: all .5s ease-in-out;
+}
+
+header nav ul a.boka-btn:hover {
+    background-color: transparent;
+    color: #d86b33;
+}
+
+header nav ul a.hostlov-btn {
+    padding: .7rem 1rem;
+    border: 1px solid white;
+    transition: all .3s ease-in-out;
+}
+
+header nav ul a.hostlov-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+header nav ul a:not(.nav-btn) {
+    transition: all .3s ease-in-out;
+    padding-bottom: 6px;
+}
+
+header nav ul a:not(.nav-btn):hover {
+    color: rgba(200, 188, 188, 0.42);
+    border-bottom: 2px solid white;
+}
